@@ -7,9 +7,11 @@
     padding:0;
     box-sizing: border-box;}
   
+/* 
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap'); */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap');
 /* === typography ===*/
 
 
@@ -84,4 +86,20 @@ main img {
     margin-bottom: 0.5rem;
 }
 
+/*=== ako page ===*/
 
+.celebrate h1, .celebrate h3 {
+    font-family: "Roboto Slab", serif;
+}
+.celebrate h1{
+    font-size:1.7em;
+    margin:0.5em 0;
+    color:#f06941
+}
+ 
+
+.celebrate h3{
+    font-size:1.4em;
+    margin:0.5em 0;
+    color:#f06941
+}
