@@ -50,26 +50,99 @@ footer{
 
 /* === navigation ===*/
 
-nav{
-    margin: 2rem 0 1rem 0;
+header {
+    position: relative; /* anchors .icon to the header, not the page */
+   }
+
+   .topnav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+   }
 
+   .topnav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #feb753;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+   }
 
-}
-
-nav a {
-color: #fff;
-font-size: 1rem;
-text-decoration: none;
-background-color: #feb753;
-padding: .5rem 1rem .5rem 1rem;
-}
-
-nav a:hover {
+   .topnav a:hover {
     text-decoration: underline;
-    background-color: #049721;
+    background-color: #049021;
+   }
+   
+   .topnav a.current-page {
+    font-weight: 600;
+   }
+   
+   .icon {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    color: #EDEDE2;
+    font-size: 2rem;
+   }
+
+   .icon .material-symbols-outlined {
+    font-size: 2rem;
+    display: block; }
+
+    /* First breakpoint */
+@media screen and (max-width: 40rem) {
+    header {
+    padding: 2rem 0 2rem 1rem;
+    min-height: 4rem;
+    }
+    .topnav
+
+   a {
+        display: none;
+    }
+
+    .icon {
+    display: block;
+    }
+    .topnav.responsive {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    margin-top: 0;
+    padding: 6rem 2rem 4rem 2rem;
+    background-color: rgba(205, 48, 70, 0.95);
+    }
+    .topnav.responsive
+   a {
+    display: block;
+    text-align: center; 
+    }
+}
+
+/* Second breakpoint */
+@media screen and (max-width: 26rem)
+{
+ header h1 {
+    max-width: 18.75rem;
+    line-height: 100%;
+ }
+ header {
+    padding-bottom: 0;
+ }
 }
 
 /* === main content area ===*/
@@ -110,8 +183,12 @@ main img {
     text-align: center;
 }
 
-.quiz h1. {
+.quiz h1 {
     font-size: 2.4rem;
     margin-left: -2.7rem;
     margin-bottom: 1.2rem;
+}
+
+.carousel-cell {
+    margin-right: 10px;
 }

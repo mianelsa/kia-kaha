@@ -2,59 +2,89 @@
 <html lang="en">
     
     <!-- *****************************
-         Author: Your name
+         Author: Mia
          Creation date: 2 August 2026
          ***************************** -->
     
-<head>
-    <title>Te Wiki O Te Reo Māori</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    
-    <link href="stylesheet.css" rel="stylesheet">
-    
-</head> 
-    
-<body>
+         <head>
+            <title>Te Wiki O Te Reo M&amacr;ori</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..70
+0,0..1,-50..200" />
 
-     <header>
-        <div>
-            <h1>Te Wiki O Te Reo Māori</h1>
-            <h2>Maori language week</h2>
-            <h3>14 - 20 Mahuru 2026, 14 - 20 September 2026</h3>
-        </div>
 
-        <nav> <!-- Navigation menu -->
-            <a href="index.html">Home</a>
-            <a href="ako.html">Ako</a>
-            <a href="pronunciation-guide.html">Pronunciation Guide</a>
-            <a href="quiz.html">Quiz</a>
-        </nav>
-    </header>
+            <!-- CSS -->
+            <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+            <link href="stylesheet.css" rel="stylesheet">
+            
+        </head>
+            
+        <body>
+        
+            <header>
+                <div>
+                    <h1>Te Wiki O Te Reo M&amacr;ori</h1>
+                    <h2>M&amacr;ori language week</h2>
+                    <h3>14 - 20 Mahuru 2026, 14 - 20 September 2026</h3>
+                </div>
+        
+                            <nav class="topnav" id="myTopnav">
+                            <a href="index.html">Home</a>
+                            <a href="ako.html">Ako</a>
+                            <a href="pronunciation-guide.html">Pronunciation Guide</a>
+                            <a href="quiz.html">Quiz</a>
+                            </nav>
+                            <button type="button" class="icon" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle menu"
+                        aria-expanded="false" aria-controls="myTopnav">
+                            <span class="material-symbols-outlined" id="menuIcon">menu</span>
+                            </button>
+                            </header>
     
     <main class="page">
         <section>
-            <article class="carousel">
-                <img class="responsive-image carousel-cell" src="images/pronunciation-guide.png">
-                <img class="responsive-image carousel-cell" src="images/Landscape-Poster-Wai-Maori.png">
-                <img class="responsive-image carousel-cell" src="images/Landscape-Poster-Te-Wao-Nui-a-Tane.png">
-                <img class="responsive-image carousel-cell" src="images/Mothers-Day-greetings.png">
-                <img class="responsive-image carousel-cell" src="images/Phrase-Card-1.png">
-                <img class="responsive-image carousel-cell" src="images/Tikiti-A4.png">
+            <article class="carousel"
+            data-flickity='{
+            "imagesLoaded": true,
+            "lazyLoad": 1,
+            "adaptiveHeight": false,
+            "autoPlay": 7000,
+            "prevNextButtons": true,
+            "pageDots": true,
+            "cellAlign": "left",
+            "contain": true,
+            "wrapAround": true,
+            "freeScroll": true
+            }'>
+
+                <img class="responsive-image carousel-cell" src="images/Give-Te-Reo-a-Go-v3-2024-1.jpg">
+                <img class="responsive-image carousel-cell" src="images/Give-Te-Reo-a-Go-v3-2024-2.jpg">
+                <img class="responsive-image carousel-cell" src="images/WEB-A4-Korero-Hoko-2024.jpg">
+                <img class="responsive-image carousel-cell" src="images/WEB-A4-Peka-Burger-2024.jpg">
+                <img class="responsive-image carousel-cell" src="images/WEB-A4-Tikiti-2024.jpg">
             </article>
         </section>
     </main>
 
     <footer>
-        <p>Copyright &copy; Your Name 2026.</p>
+        <p>Copyright &copy; Mia 2026.</p>
     </footer>
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  
+    <script>
+        function toggleMenu() {
+        const nav = document.getElementById("myTopnav");
+        const icon = document.getElementById("menuIcon");
+        const btn = document.getElementById("menuToggle");
+        const isOpen = nav.classList.toggle("responsive");
+   // icon.textContent = isOpen ? "close" : "menu";
+   // btn.setAttribute("aria-expanded", isOpen);
+        } </script>
 </body>
 </html>
