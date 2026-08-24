@@ -103,3 +103,15 @@ main img {
     margin:0.5em 0;
     color:#f06941
 }
+
+/*=== Quiz Section ===*/
+
+.quiz{
+    text-align: center;
+}
+
+.quiz h1. {
+    font-size: 2.4rem;
+    margin-left: -2.7rem;
+    margin-bottom: 1.2rem;
+}
